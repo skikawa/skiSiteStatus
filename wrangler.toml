@@ -1,0 +1,21 @@
+name = "site-status"
+main = "worker/index.ts"
+compatibility_date = "2024-12-01"
+
+[assets]
+directory = "./dist"
+
+[vars]
+COUNT_DAYS = "60"
+SHOW_LINKS = "true"
+
+# Sensitive variables — set via Dashboard or `wrangler secret put`:
+# - API_URL
+# - API_KEY
+
+[observability.logs]
+enabled = true
+invocation_logs = true
+
+[observability.traces]
+enabled = false

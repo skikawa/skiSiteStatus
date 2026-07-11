@@ -1,0 +1,36 @@
+# Build outputs
+dist
+server/dist
+
+# Node dependencies
+node_modules
+
+# TypeScript build info
+tsconfig.tsbuildinfo
+server/tsconfig.tsbuildinfo
+
+# Logs
+logs
+*.log
+sw.*
+
+# PWA
+dev-dist
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
+server/.env
+
+# Vite
+.vite
+
+# Deployment
+.vercel
+.wrangler
