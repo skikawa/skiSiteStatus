@@ -35,7 +35,7 @@ const SiteFooter: React.FC = () => {
       {/* Social links */}
       <Box sx={{ display: "flex", gap: 1, mb: 1.5 }}>
         <IconButton
-          href="https://github.com/imsyy/site-status"
+          href="https://github.com/skikawa/skiSiteStatus"
           target="_blank"
           rel="noopener noreferrer"
           size="medium"
@@ -43,7 +43,7 @@ const SiteFooter: React.FC = () => {
           <GitHubIcon />
         </IconButton>
         <IconButton
-          href="https://imsyy.top"
+          href="https://skwa.cc"
           target="_blank"
           rel="noopener noreferrer"
           size="medium"
@@ -51,7 +51,7 @@ const SiteFooter: React.FC = () => {
           <HomeRounded />
         </IconButton>
         <IconButton
-          href="mailto:imsyy@foxmail.com"
+          href="mailto:skikawa@outlook.com"
           size="medium"
         >
           <EmailRounded />
@@ -97,7 +97,7 @@ const SiteFooter: React.FC = () => {
           Copyright &copy; 2020 - {CURRENT_YEAR}{" "}
           <Box
             component="a"
-            href="https://imsyy.top"
+            href="https://skwa.cc"
             target="_blank"
             rel="noopener noreferrer"
             sx={{
@@ -109,7 +109,7 @@ const SiteFooter: React.FC = () => {
               transition: "color 0.3s",
             }}
           >
-            IMSYY
+            SKIKAWA
           </Box>
           {icp && (
             <>

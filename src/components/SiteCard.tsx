@@ -56,7 +56,7 @@ const SiteCard: React.FC<SiteCardProps> = React.memo(({ site, index }) => {
     <Card
       elevation={1}
       sx={{
-        borderRadius: 4,
+        borderRadius: 3,
         overflow: "hidden",
         animation: `floatUp 0.5s ease-out forwards`,
         animationDelay: `${index * 0.1}s`,

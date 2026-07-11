@@ -1,14 +1,3 @@
-/**
- * Cloudflare Worker entry point — delegates to shared handler.
- * Zero platform-specific type dependencies.
- *
- * Required secrets (Dashboard or `wrangler secret put`):
- * - API_URL, API_KEY
- *
- * Optional vars (wrangler.toml or Dashboard):
- * - COUNT_DAYS (default 60), SHOW_LINKS (default true)
- */
-
 import { handleGetMonitors, type ApiConfig } from "../src/api/getMonitors";
 
 interface Env {
