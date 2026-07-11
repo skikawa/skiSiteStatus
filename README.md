@@ -10,24 +10,17 @@ English | [简体中文](./README.zh-CN.md)
 <img src="https://img.shields.io/github/forks/imsyy/site-status?style=full&color=orange" alt="GitHub followers"/>
 <br />
 <br />
-<img src="https://s1.ax1x.com/2023/07/20/pCHnLLt.png" alt="demo"/>
 </div>
 
-## 👀 Demo
 
-> Demo password: `123456`
+## Features
 
-- [IMSYY-Site Monitoring](https://status.imsyy.top/)
-
-## 🎉 Features
-
-- 🌍 Multi-platform deployment support
-- ✨ Elegant and smooth browsing experience
-- 🔐 Supports site password encryption (JWT + Hash)
-- 👀 Overall site status preview
-- ⏲️ Data auto-refresh
-- 📱 Mobile-friendly design
-
+- SPEED UP
+  Update UptimeRobotAPI to V3 & Refactoring with React 19 + Vite 8 + MUI 9
+  Loading time from 60s → 10s
+- UI Rewrite
+  Rewrite with MUI & Generally follows Material Design
+  
 ## Prerequisites
 
 - You need to first add site monitors on [UptimeRobot](https://uptimerobot.com/dashboard) and get the `Read-Only API Key` from the `My Settings` or [API Management](https://dashboard.uptimerobot.com/integrations) page (Do not use the `Main API key`).
@@ -37,7 +30,7 @@ English | [简体中文](./README.zh-CN.md)
 
 ### Recommended Setup
 
-This project currently targets Cloudflare Workers and serves the frontend and API from the same deployment.
+This project currently targets Cloudflare Workers.
 
 ### Required Environment Variables
 
@@ -69,12 +62,6 @@ npm run build
 npm run deploy
 ```
 
-### Troubleshooting
-
-- If the app shows `Missing API_URL or API_KEY`, confirm that the secret exists in the Worker environment.
-- If an API error persists, verify that `API_URL` is `https://api.uptimerobot.com/v3/` and `API_KEY` is valid.
-- Make sure the Worker name in Dashboard matches the `name` in `wrangler.toml`.
-
 ## Local Development
 
 Run the app locally with Vite:
@@ -83,12 +70,6 @@ Run the app locally with Vite:
 npm install
 npm run dev
 ```
-
-### How it works
-
-- Frontend fetches `/api/getMonitors` from the Worker.
-- Worker reads `API_URL` and `API_KEY` from secrets and forwards requests to UptimeRobot.
-- Cached responses are stored in memory for 60 seconds.
 
 ## UI Customization
 
@@ -101,4 +82,5 @@ Key UI settings are defined in:
 
 ## Thanks
 
+- [site-status](https://github.com/imsyy/site-status) this project is a modified edition of it
 - [uptime-status](https://github.com/yb/uptime-status) inspired this project
